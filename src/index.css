@@ -1,0 +1,298 @@
+@import url(https://fonts.googleapis.com/css?family=Outfit:100,200,300,regular,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Newsreader:200,300,regular,500,600,700,800,200italic,300italic,italic,500italic,600italic,700italic,800italic);
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "outfit";
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background-color: #02ffdd;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  width: 90%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.logo h1 {
+  font-weight: 300;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.15rem;
+  transition: 0.4s ease-in-out;
+}
+
+nav ul a:hover {
+  color: rgb(255, 0, 0);
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user .login {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 0.5rem 2.5rem;
+  border-radius: 6px;
+}
+
+.user img {
+  cursor: pointer;
+}
+
+.menu{
+    display: none;
+}
+
+/* home */
+.home {
+  display: flex;
+  flex-direction: column;
+}
+
+.Hero {
+  padding: 8rem 2%;
+}
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: left;
+}
+
+.heading p {
+  font-size: 1.15rem;
+}
+.main-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.main-header hr {
+  width: 100px;
+  height: 0.5vh;
+  background-color: black;
+  border: none;
+}
+
+.main-header h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: "newsreader";
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  padding: 2rem 1rem;
+}
+
+.hero-item1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 80%;
+}
+
+.news-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.title h1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-decoration: underline;
+}
+.news-container img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.text h1 {
+  font-size: 1.25rem;
+}
+
+.text h5 {
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+.text p {
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+/* login */
+.Login-page {
+  padding: 8rem 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  min-height: 65vh;
+}
+
+.App-logo img {
+  width: 60px;
+}
+
+form {
+  padding: 1rem;
+  border-radius: 25px;
+  box-shadow: 15px 15px 5px #02ffdd;
+  background-color: rgb(255, 255, 255);
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  border: 1px solid;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-bottom: 1px solid black;
+}
+
+.image-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+input {
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 350px;
+  padding: 1rem;
+  padding-left: 20px;
+  font-size: 1rem;
+}
+
+.remember_forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  justify-content: baseline;
+  width: 100%;
+}
+
+.check {
+  width: fit-content;
+}
+
+.label2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.submit button {
+  width: 200px;
+  height: 4.5vh;
+  border: none;
+  border-radius: 100px;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.submit button:hover {
+  background-color: rgb(85, 215, 255);
+  transition: 0.5s ease-in-out;
+  color: black;
+}
+
+.forgot {
+  text-decoration: none;
+  color: rgb(207, 4, 207);
+}
+
+.create {
+  color: black;
+}
+
+@media (max-width: 768px) {
+    header{
+        background-color: antiquewhite;
+    }
+  nav {
+    position: absolute;
+    top: 100%;
+    width: 95%;
+    left: 0;
+    padding: 1rem;
+    background-color: navajowhite;
+    transform: translateX(100%);
+    transition: 0.4s ease-in-out;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-container{
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .heading{
+    padding: 1rem;
+  }
+
+  .menu{
+    display: block;
+  }
+}
